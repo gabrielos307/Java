@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class AL{
+	static Scanner teclado = new Scanner(System.in);
+	static ArrayList<Integer> arreglo = new ArrayList<Integer>();
+	public static void main(String[] args){
+		System.out.println("Ingresa un arreglo de numeros. Ingresa 0 si quieres terminar");
+		int valor = teclado.nextInt();
+		while(valor != 0){
+			arreglo.add(valor);
+			valor = teclado.nextInt();
+		}
+		imprimirArreglo();
+		System.out.println("Que numero quieres eliminar: ");
+		int borrar = teclado.nextInt();
+		for(int i = 0; i < arreglo.size(); i++){
+			if(arreglo.get(i) == borrar){
+				arreglo.remove(i);
+				break;
+			}
+		}
+		imprimirArreglo();
+	}
+	public static void imprimirArreglo(){
+		System.out.println("-----------");
+		for ( int i : arreglo){
+			System.out.println();
+		}
+	}
+}
+

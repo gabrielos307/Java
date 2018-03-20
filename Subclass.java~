@@ -1,0 +1,6 @@
+public class Subclass{
+	public void imprimir(){
+		super.imprimir();
+		System.out.println("Desde la subclase");	
+	}
+}

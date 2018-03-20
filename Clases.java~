@@ -1,0 +1,8 @@
+public class Clases{
+	public static void main(String[] args){
+		Superclass sc = new Superclass();
+		sc.imprimir();
+		Subclase sb = new Subclass();
+		sb.imprimir();
+	}
+}
